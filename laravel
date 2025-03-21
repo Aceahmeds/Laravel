@@ -1,0 +1,76 @@
+first dounload composer .exe file
+xamp php and mysql
+globally install karoo laraverl ko agr error aya to phir
+C:\xampp\php\php.ini
+;extension=zip
+; hide kardo.
+
+laravel new project1
+istall karo globally
+
+resouses ma hm view ma file create karta ha
+routes ma web.php ma routes set karo
+
+
+
+
+
+What is MVC?
+Model -> business logic,db conn create karta ha 
+View -> code we write display a user on a ui (user interface)	
+Controler -> handle user interaction and select a view to render,communicate model and view
+
+//routing in laravel
+open and view with route
+pass data form routes
+anchor tag
+<a href="/about">about</a>
+routes with redirect
+
+routing methd
+Route::get('/home',function(){
+    return view('home');
+}); 
+
+//short syntax routes ka
+Route::view("/home","home");
+
+routing ka sat agr controller open karwana ho to mujy get method use karna ho ga
+
+ // =========================routing a data  with name===========================
+// Route::get("/about/{name}",function($name){
+//     echo $name;
+//     return view("about");
+// });
+then show karo 
+h1{{$name}}h1
+// eg2
+// Route::get("/about/{name}",function($name){
+
+//     return view("about",['name'=>$name]);
+// });
+cla
+
+// route with redirect
+// Route::get('/home',function(){
+//     return redirect('/about');
+// });
+// short syntax
+Route::redirect('/home','/about');	
+
+
+
+//================================================Controller ======================================================
+mvc comes under mvc architecture
+The controller Handle request form user
+Display view
+handle databse 
+
+// how to make controller
+php artisan make:controller UserController
+function getUer(){
+        return "MAhmedkhan";
+    }
+
+use a controoler
+
